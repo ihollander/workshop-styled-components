@@ -112,7 +112,7 @@ export default function App() {
 // Using this to give all the layouts some of the styles to keep this code DRY
 const layoutBox = css`
   width: 80%;
-  height: 300px;
+  min-height: 300px;
   resize: both;
   overflow: auto;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);

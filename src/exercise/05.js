@@ -24,10 +24,10 @@ export default function App() {
         </NavBar>
         <MainContent>
           <Section id="home">
-            <h1>Home Page</h1>
+            <h1>Home</h1>
           </Section>
           <Section id="about">
-            <h1>About Page</h1>
+            <h1>About</h1>
             <p>About Me</p>
           </Section>
         </MainContent>
