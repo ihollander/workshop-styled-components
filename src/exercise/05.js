@@ -1,8 +1,11 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-  body {
+  html {
     font-family: "Comic Sans MS", sans-serif;
+  }
+
+  body {
     color: red;
   }
 
@@ -16,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
 export default function App() {
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle test="prop" />
       <PageWrapper>
         <NavBar>
           <a href="#home">Home</a>
