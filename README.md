@@ -1,4 +1,4 @@
-# Custom Hooks Workshop
+# Styled Components Workshop
 
 ## Setup
 
