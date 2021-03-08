@@ -1,8 +1,26 @@
+import { useState } from "react";
 import styled, { css } from "styled-components";
 
 export default function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <PageWrapper>
+      <h2>Modal Popup</h2>
+      {/* clicking outside the window closes it */}
+      <ModalWrapper isOpen={isOpen} onClick={() => setIsOpen(false)}>
+        {/* stopPropagation prevents the event from bubbling up and closing the window */}
+        <ModalWindow onClick={e => e.stopPropagation()}>
+          <Box background="palegreen">
+            <h4>Modal Content</h4>
+            <p>Whatever you want in the box</p>
+            <Visual background="lavender" />
+            <button onClick={() => setIsOpen(false)}>Close Modal</button>
+          </Box>
+        </ModalWindow>
+      </ModalWrapper>
+      <button onClick={() => setIsOpen(true)}>Open Modal</button>
+
       <h2>CenteredLayout</h2>
       <CenteredLayout>
         <Box background="papayawhip">:)</Box>
@@ -120,6 +138,22 @@ const layoutBox = css`
   > * {
     border: 1px dashed rgba(0, 0, 0, 0.1);
   }
+`;
+
+const ModalWrapper = styled.div`
+  display: ${({ isOpen }) => (isOpen ? "grid" : "none")};
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.7);
+`;
+
+const ModalWindow = styled.div`
+  width: 400px;
+  height: 400px;
 `;
 
 const CenteredLayout = styled.div`
