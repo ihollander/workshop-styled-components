@@ -1,3 +1,41 @@
+import { useState } from "react";
+import styled from "styled-components";
+
+const Box = styled.div`
+  width: 300px;
+  height: 300px;
+  display: grid;
+  place-content: center;
+  background: skyblue;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+`;
+
+const Button = styled.button`
+  background: dodgerblue;
+  padding: 1rem;
+  font-size: 1em;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 200ms ease;
+
+  :hover {
+    background: blueviolet;
+    color: white;
+  }
+
+  :focus {
+    background: hotpink;
+    color: white;
+  }
+`;
+
 export default function App() {
-  return <h1>Workshop Template</h1>;
+  const [count, setCount] = useState(0);
+
+  return (
+    <Box>
+      <Button onClick={() => setCount(count + 1)}>Clicks: {count}</Button>
+    </Box>
+  );
 }
