@@ -20,12 +20,12 @@ const Button = styled.button`
   cursor: pointer;
   transition: 200ms ease;
 
-  :hover {
+  &:hover {
     background: blueviolet;
     color: white;
   }
 
-  :focus {
+  &:focus {
     background: hotpink;
     color: white;
   }
