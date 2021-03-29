@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 const UnorderedList = styled.ul`
   width: 400px;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 16px;
+  padding: 16px;
   list-style: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -13,7 +13,7 @@ const UnorderedList = styled.ul`
 
 // ✅ use the isEven prop in this component to change the background color for even rows!
 const ListItem = styled.li`
-  padding: 0.25rem 1rem;
+  padding: 4px 16px;
   background: aliceblue;
 `;
 

@@ -11,6 +11,8 @@ const GlobalStyle = createGlobalStyle`
     font-weight: bold;
     color: blue;
   }
+
+  /* ✅ try adding a global style to all the h1 and p tags */
 `;
 
 export default function App() {
@@ -48,7 +50,7 @@ const NavBar = styled.nav`
   display: flex;
   justify-content: space-between;
   background: lavender;
-  padding: 1rem;
+  padding: 16px;
 `;
 
 const MainContent = styled.main`

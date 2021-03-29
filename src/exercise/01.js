@@ -3,7 +3,7 @@ import { useState } from "react";
 // 👀 import styled from "styled-components";
 
 // ✅ create two components using styled-components: a div and a button
-// ✅ use the inline styles from below to create the CSS string for your components
+// ✅ use the inline styles from the elements below to create the CSS rules for your components
 // 📃 https://styled-components.com/docs/basics#getting-started
 
 export default function App() {
@@ -18,10 +18,24 @@ export default function App() {
         height: "300px",
         display: "grid",
         placeContent: "center",
+        gap: "16px",
         background: "skyblue",
         boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.15)",
       }}
     >
+      <button
+        style={{
+          background: "dodgerblue",
+          padding: "16px",
+          fontSize: "1rem",
+          border: "2px solid black",
+          borderRadius: "4px",
+          cursor: "pointer",
+        }}
+        onClick={() => setCount(count + 1)}
+      >
+        Clicks: {count}
+      </button>
       <button
         style={{
           background: "dodgerblue",

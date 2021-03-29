@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-  padding: 0.75rem;
+  padding: 12px;
   font-size: 1rem;
   font-weight: bold;
   font-family: sans-serif;
@@ -24,7 +24,7 @@ const Button = styled.button`
 
 // ✅ delete this code!
 const ButtonLink = styled.a`
-  padding: 0.75rem;
+  padding: 12px;
   font-size: 1rem;
   font-weight: bold;
   font-family: sans-serif;
@@ -62,6 +62,6 @@ const Wrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   width: 80%;
-  padding: 1rem;
+  padding: 16px;
   background-color: darkgray;
 `;
