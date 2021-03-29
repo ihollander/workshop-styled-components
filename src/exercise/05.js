@@ -41,6 +41,7 @@ export default function App() {
 const PageWrapper = styled.div`
   width: 80%;
   height: 80%;
+  min-height: 500px;
   display: grid;
   grid-template-rows: auto 1fr;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
