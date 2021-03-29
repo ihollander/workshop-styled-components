@@ -1,28 +1,30 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-  padding: 12px;
-  font-size: 1rem;
-  font-weight: bold;
-  font-family: sans-serif;
-  text-decoration: none;
+  background: dodgerblue;
+  padding: 16px;
+  border: 2px solid black;
+  border-radius: 4px;
   cursor: pointer;
-  color: cyan;
-  background-color: black;
-  border: 2px solid cyan;
-  transition: all 0.2s ease;
-  line-height: 1;
+  transition: 200ms ease;
+  color: white;
+  text-decoration: none;
+  font: 1rem sans-serif;
 
-  :hover,
-  :focus {
-    outline: none;
-    color: black;
-    background-color: cyan;
-    border: 2px solid black;
+  &:hover {
+    background: blueviolet;
+    color: white;
+  }
+
+  &:focus {
+    background: hotpink;
+    color: white;
   }
 `;
 
 export default function NavBar() {
+  // ✅ update the <a> elements to use the Button component instead, with the "as" prop
+  // they should still also have the href prop (since we want them to be links)
   return (
     <Wrapper>
       <Button as="a" href="#home">
@@ -42,7 +44,8 @@ export default function NavBar() {
 const Wrapper = styled.nav`
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  gap: 16px;
+  max-width: 80%;
+  margin: 0 auto;
   padding: 16px;
-  background-color: darkgray;
 `;
