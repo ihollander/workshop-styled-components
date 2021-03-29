@@ -14,9 +14,9 @@ const UnorderedList = styled.ul`
 const ListItem = styled.li`
   padding: 4px 16px;
   background: ${({ number }) => {
-    if (number % 3 === 0 && number % 5 === 0) return "blueviolet";
-    if (number % 3 === 0) return "blue";
-    if (number % 5 === 0) return "violet";
+    if (number % 3 === 0 && number % 5 === 0) return "lightgreen";
+    if (number % 3 === 0) return "aliceblue";
+    if (number % 5 === 0) return "lemonchiffon";
     return "white";
   }};
 `;
