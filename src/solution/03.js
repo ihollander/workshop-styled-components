@@ -13,7 +13,7 @@ const UnorderedList = styled.ul`
 
 const ListItem = styled.li`
   padding: 4px 16px;
-  background: ${props => (props.isEven ? "aliceblue" : "white")};
+  background: ${props => (props.isEven ? "deeppink" : "white")};
 `;
 
 const items = ["Check", "Out", "This", "Great", "List"];
