@@ -2,7 +2,7 @@
 
 ## Setup
 
-- Clone and download this repo
+- Fork, clone and download this repo
 - Run `npm install` in the repo directory
 - Run `npm start` to run the project in the browser
 
